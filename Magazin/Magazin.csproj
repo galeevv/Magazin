@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{293E4E90-EAFB-4409-A1B1-C1352CAAD91F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Magazin</RootNamespace>
+    <AssemblyName>Magazin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBalance.Designer.cs">
+      <DependentUpon>AddBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddP.Designer.cs">
+      <DependentUpon>AddP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm.Designer.cs">
+      <DependentUpon>adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adm_products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm_products.Designer.cs">
+      <DependentUpon>adm_products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adm_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm_users.Designer.cs">
+      <DependentUpon>adm_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regist.Designer.cs">
+      <DependentUpon>regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shop.Designer.cs">
+      <DependentUpon>shop.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBalance.resx">
+      <DependentUpon>AddBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddP.resx">
+      <DependentUpon>AddP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adm.resx">
+      <DependentUpon>adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adm_products.resx">
+      <DependentUpon>adm_products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adm_users.resx">
+      <DependentUpon>adm_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="regist.resx">
+      <DependentUpon>regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shop.resx">
+      <DependentUpon>shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39mm-Evrensel-Scooter-i-in-Motosiklet-Hava-Filtresi-Temizleyici-Hava-Bakla-Cafe-Racer-Dirt-Bike-Hava.jpg-600x540.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\392530_add_create_cross_new_plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9104152_shop_buy_basket_add to cart_trolley_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\172618_update_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\370092_add_plus_create_new_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\641039.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640996.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\641298.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6412981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AaRlCwbhVCM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
